@@ -14,7 +14,15 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "federation.manifest": [
+        "./federation.manifest.ts"
+      ],
+      "@wrckt/native-federation-decorators": [
+        "libs/native-federation-decorators/src/index.ts"
+      ]
+    }
   },
+  "include": ["./federation.manifest.ts"],
   "exclude": ["node_modules", "tmp"]
 }

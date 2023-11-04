@@ -1,10 +1,15 @@
 {
-  "name": "@native-example/source",
+  "name": "@wrkct/native-federation-decorators-example",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build:shell": "nx build shell",
+    "serve:shell": "nx serve shell",
+    "serve:all": "concurrently \"nx run remote-1:serve:development\" \"nx run remote-2:serve:development\" \"nx run shell:serve:development\""
+  },
   "private": true,
   "dependencies": {
+    "@angular-architects/native-federation": "^16.3.4",
     "@angular/animations": "~16.2.0",
     "@angular/common": "~16.2.0",
     "@angular/compiler": "~16.2.0",
@@ -14,6 +19,8 @@
     "@angular/platform-browser-dynamic": "~16.2.0",
     "@angular/router": "~16.2.0",
     "@nx/angular": "17.0.2",
+    "@softarc/native-federation": "^2.0.4",
+    "es-module-shims": "^1.5.12",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
@@ -36,20 +43,28 @@
     "@schematics/angular": "~16.2.0",
     "@swc-node/register": "~1.6.7",
     "@swc/core": "~1.3.85",
+    "@ts-ast-parser/core": "^0.6.2",
     "@types/jest": "^29.4.0",
     "@types/node": "16.11.7",
     "@typescript-eslint/eslint-plugin": "^5.60.1",
     "@typescript-eslint/parser": "^5.60.1",
+    "concurrently": "^8.2.2",
     "eslint": "~8.46.0",
     "eslint-config-prettier": "^9.0.0",
     "jest": "^29.4.1",
     "jest-environment-jsdom": "^29.4.1",
     "jest-preset-angular": "~13.1.0",
     "jsonc-eslint-parser": "^2.1.0",
+    "ng-packagr": "~16.2.0",
     "nx": "17.0.2",
+    "postcss": "^8.4.5",
+    "postcss-import": "~14.1.0",
+    "postcss-preset-env": "~7.5.0",
+    "postcss-url": "~10.1.3",
     "prettier": "^2.6.2",
     "ts-jest": "^29.1.0",
     "ts-node": "10.9.1",
-    "typescript": "~5.1.3"
+    "typescript": "~5.1.3",
+    "typescript-parser": "^2.6.1"
   }
 }
