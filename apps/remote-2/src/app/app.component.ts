@@ -5,7 +5,6 @@ import { withNativeFederationRemote } from '@wrckt/native-federation-decorators'
 @withNativeFederationRemote({
   name: 'remote-2',
   exposes: {
-    './Component': './apps/remote-2/src/app/app.component.ts',
     './Routes': './apps/remote-2/src/app/app.routes.ts',
   },
   shared: {
@@ -30,4 +29,4 @@ import { withNativeFederationRemote } from '@wrckt/native-federation-decorators'
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent {}
+export default class AppComponent {}

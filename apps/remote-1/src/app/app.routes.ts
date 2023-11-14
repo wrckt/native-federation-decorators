@@ -13,7 +13,6 @@ export const appRoutes: Route[] = [
     path: 'remote-2',
     loadComponent: () =>
       initFederation(FEDERATION_MANIFEST)
-      .then(() => loadRemoteModule('remote-2', './Component'))
-      .then((m) => m.AppComponent)
+      .then(() => loadRemoteModule('remote-2', './Entry'))
   }
 ];

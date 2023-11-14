@@ -1,1 +1,1 @@
-export * from './lib/native-federation-decorators';
+export * from './lib/decorators.js';
