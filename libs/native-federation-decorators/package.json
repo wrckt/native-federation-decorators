@@ -2,8 +2,8 @@
   "name": "@wrckt/native-federation-decorators",
   "version": "0.0.1",
   "dependencies": {
-    "@angular-architects/native-federation": "^16.3.4",
-    "@softarc/native-federation": "^2.0.4",
+    "@angular-architects/native-federation": "^16.3.5",
+    "@softarc/native-federation": "^2.0.5",
     "@ts-ast-parser/core": "^0.6.2",
     "tslib": "^2.3.0"
   },

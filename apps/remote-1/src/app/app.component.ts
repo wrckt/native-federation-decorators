@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import '@angular/core/primitives/signals';
 import { RouterModule } from '@angular/router';
 import { withNativeFederationRemote } from '@wrckt/native-federation-decorators';
 
@@ -9,6 +10,7 @@ import { withNativeFederationRemote } from '@wrckt/native-federation-decorators'
   },
   shared: {
     '@angular/core': { requiredVersion: 'auto', singleton: true },
+    '@angular/core/primitives/signals': { requiredVersion: 'auto', singleton: true },
     '@angular/common': { requiredVersion: 'auto', singleton: true },
     '@angular/router': { requiredVersion: 'auto', singleton: true },
     '@angular/common/http': { requiredVersion: 'auto', singleton: true },
