@@ -1,6 +1,6 @@
 import { withNativeFederation } from '@angular-architects/native-federation/config.js';
 import { FederationConfig } from '@softarc/native-federation/src/lib/config/federation-config';
-import { AnalyserOptions, parseFromProject, ClassNode, Declaration, DeclarationNode, DecoratorNode, ModuleNode } from '@ts-ast-parser/core';
+import { parseFromProject, AnalyserOptions, ClassNode, Declaration, DeclarationNode, DecoratorNode, ModuleNode } from '@ts-ast-parser/core';
 import { Node } from 'typescript';
 export async function getConfigFromProject(options?: Partial<AnalyserOptions>) {
   const { project } = await parseFromProject(options);

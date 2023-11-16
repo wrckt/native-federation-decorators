@@ -2,16 +2,15 @@
   "name": "@wrckt/native-federation-decorators",
   "version": "0.0.1",
   "dependencies": {
-    "@angular-architects/native-federation": "^16.3.4",
-    "@softarc/native-federation": "^2.0.4",
+    "@angular-architects/native-federation": "^16.3.0",
+    "@softarc/native-federation": "^2.0.0",
     "@ts-ast-parser/core": "^0.6.2",
     "tslib": "^2.3.0"
   },
   "type": "module",
   "exports": {
     ".": "./src/index.js",
-    "./config": "./src/lib/config.js",
-    "./decorators": "./src/lib/decorators.js"
+    "./config": "./src/lib/config.js"
   },
   "typings": "./src/index.d.ts"
 }
